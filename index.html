@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" >
+   
+</head>
+<body>
+    <main>
+        <div class="main-weather">
+            <div class="search-bar container2">
+                <input type="text" placeholder="Search for places" class="search">
+                <button class="btn1"><i class="fa-solid fa-magnifying-glass-location "></i></button>
+            </div>
+
+            <img src="img/Shower.png" alt="" class="main-img">
+
+            <div class="temperature container2">
+                <h1 id="mainTemp">15</h1>
+                <span>°C</span>
+            </div>
+            <h2 id="status"></h2>
+
+            <p id="todaysDate"> </p>
+            <p id="city"> </p>
+        </div>
+
+        <div class="second-weather">
+            <div class="celsius container2">
+                <button class="btn2 celsius">°C</button>
+                <button class="btn2 fahren">°F</button>
+            </div>
+
+            <div class="weekdays container2">
+                <div class="day ">
+                    <h6>Tommorrow</h6>
+                    <img src="img/Snow.png" alt="" width="70%" class="main-img">
+                    <div class="weekday-tp col-5">
+                        <h6 class="dayTemp maxTemp1">16°C</h6> 
+                        <h6 class="nightTemp minTemp1 ">11°C</h6>
+                    </div>
+                </div>
+                <div class="day">
+                    <h6 class="twoMoreDays">Sun, 7 Jun</h6>
+                    <img src="img/Snow.png" alt="" width="70%" class="main-img">
+                    <div class="weekday-tp col-5">
+                        <h6 class="dayTemp maxTemp2">16°C</h6> 
+                        <h6 class="nightTemp minTemp2">11°C</h6>
+                    </div>
+                </div>
+                <div class="day">
+                    <h6 class="threeMoreDays">Sun, 7 Jun</h6>
+                    <img src="img/Snow.png" alt="" width="70%" class="main-img">
+                    <div class="weekday-tp col-5">
+                        <h6 class="dayTemp maxTemp3">16°C</h6> 
+                        <h6 class="nightTemp minTemp3">11°C</h6>
+                    </div>
+                </div>
+                <div class="day">
+                    <h6 class="fourMoreDays">Sun, 7 Jun</h6>
+                    <img src="img/Snow.png" alt=""width="70%" class="main-img" >
+                    <div class="weekday-tp col-5">
+                        <h6 class="dayTemp maxTemp4">16°C</h6> 
+                        <h6 class="nightTemp minTemp4">11°C</h6>
+                    </div>
+                </div>
+                <div class="day">
+                    <h6 class="fiveMoreDays">Sun, 7 Jun</h6>
+                    <img src="img/Snow.png" alt="" width="70%" class="main-img">
+                    <div class="weekday-tp col-5">
+                        <h6 class="dayTemp maxTemp5">16°C</h6> 
+                        <h6 class="nightTemp minTemp5">11°C</h6>
+                    </div>
+                </div>
+            </div>
+
+            
+                
+            <section class="today-info container2">
+                <h3 class="highlights">Today's Highlights</h3>
+                <article class="flex-container" >
+                    <!-- <div class="block2">    -->
+                        <div class="grid-item  ">
+                            <h6>Wind status</h6>
+                            <h2 class="windStatus mainNumber">7mph</h2>
+                        </div>
+
+                        <div class="grid-item  ">
+                            <h6>Humidity</h6>
+                            <h2  class="humidity mainNumber">84%</h2>
+                            <div class="percent">
+                                <div class="number">
+                                    <p>0%</p>
+                                    <p>50%</p>
+                                    <p>100%</p>
+                                </div>
+                                <div class="whiteBar">
+                                    <div class="yellowBar "></div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="grid-item">
+                            <h6>Visibility</h6>
+                            <h2 class="visibility mainNumber">6,4 km</h2>
+                        </div>
+
+                        <div class="grid-item ">
+                            <h6>Air pressure</h6>
+                            <h2 class="airPressure mainNumber">998 mb</h2>
+                        </div>
+                    
+                </article>
+            <!-- <div class="today-info container2">
+                <h3 class="highlights">Today's Highlights</h3>
+                <div class="grid-container" >
+                    <div class="block2">   
+                        <div class="grid-item  ">
+                            <h6>Wind status</h6>
+                            <h2 class="windStatus mainNumber">7mph</h2>
+                        </div>
+
+                        <div class="grid-item  ">
+                            <h6>Humidity</h6>
+                            <h2  class="humidity mainNumber">84%</h2>
+                            <div class="percent">
+                                <div class="number">
+                                    <p>0%</p>
+                                    <p>50%</p>
+                                    <p>100%</p>
+                                </div>
+                                <div class="whiteBar">
+                                    <div class="yellowBar "></div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="grid-item">
+                            <h6>Visibility</h6>
+                            <h2 class="visibility mainNumber">6,4 km</h2>
+                        </div>
+
+                        <div class="grid-item ">
+                            <h6>Air pressure</h6>
+                            <h2 class="airPressure mainNumber">998 mb</h2>
+                        </div>
+                    
+                </div> -->
+
+            </section>
+
+            <h6 class="footer">Created by Tony Tran</h6>
+        </div>
+    </main>
+    
+
+    
+</body>
+<script 
+    src="https://kit.fontawesome.com/984ac9dfc5.js" crossorigin="anonymous">
+    
+</script>
+<script 
+    src="script.js">
+    
+</script>
+</html>
